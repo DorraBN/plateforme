@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Étudiant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        .profile-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .cover-photo {
+            width: 100%;
+            height: 200px;
+            background: #3b5998;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .profile-header {
+            display: flex;
+            justify-content: center;
+            margin-top: -80px;
+            position: relative;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .profile-info {
+            text-align: center;
+            margin: 20px;
+        }
+        .profile-info h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #333;
+        }
+        .profile-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .button-primary {
+            background-color: #3b5998;
+        }
+        .button-secondary {
+            background-color: #8b9dc3;
+        }
+        .staff-container {
+            padding: 20px;
+        }
+        .staff-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .staff-card h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .staff-card p {
+            margin: 5px 0;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="cover-photo">
+            Couverture du Profil
+        </div>
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/150" alt="Photo de Profil" class="profile-picture">
+        </div>
+        <div class="profile-info">
+            <h1>Jean Dupont</h1>
+            <p>Étudiant en Informatique</p>
+            <a href="#" class="button button-primary">Envoyer un Message</a>
+            <a href="#" class="button button-secondary">Ajouter aux Contacts</a>
+        </div>
+        <div class="staff-container">
+            <h2>Équipe de Soutien</h2>
+            <div class="staff-card">
+                <h3>Dr. Alice Martin</h3>
+                <p>Professeur Principal</p>
+                <p>Email: alice.martin@universite.fr</p>
+            </div>
+            <div class="staff-card">
+                <h3>M. Bob Lefevre</h3>
+                <p>Conseiller Pédagogique</p>
+                <p>Email: bob.lefevre@universite.fr</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

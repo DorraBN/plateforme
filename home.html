@@ -10,7 +10,7 @@
     <header>
         <div class="container">
             <div class="header-left">
-                <input type="text" placeholder="Rechercher...">
+                <input type="text" placeholder="🔍 Rechercher...">
             </div>
            
             <div class="header-right">
@@ -24,7 +24,7 @@
                     <a href="message.html" title="Messagerie"><i class="fas fa-envelope"></i></a>
                     <a href="#" title="Notifications"><i class="fas fa-bell"></i></a>
                 </nav>
-                <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+                <img src="./assets/macha.jpeg" alt="Profile Picture" class="profile-pic">
             </div>
         </div>
     </header>
@@ -32,40 +32,60 @@
     <main>
         <div class="container">
             <section class="news-feed">
+                
                 <div class="post-form">
-                    <textarea placeholder="Quoi de neuf, étudiant ?"></textarea>
-                    <button>Publier</button>
+                    <img src="./assets/macha.jpeg" alt="User" class="post-profile-pic">
+                    <textarea placeholder="👋,Quoi de neuf, étudiant ?"></textarea>
+                    <button>Publier <i class="fas fa-paper-plane"></i></button>
+                </div>
+                <div class="posts">
+                    <div class="post">
+                       
+                        <div class="po" ><img src="./assets/p.png" style="width: 25px;height:25px;margin-left: 650px;
+  margin-top: -25px;" alt=""> <div class="c">❌</div></div>
+                        <div class="post-header">
+                            <img src="./assets/gam.jpeg" alt="User" class="post-profile-pic">
+                            <div class="post-info">
+                                <h3>Nom </h3>
+                                <p>Il y a 2 heures</p>
+                            </div>
+                        </div>
+                        <p>Contenu de la publication... Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="./assets/dar.jpeg" alt="Post Image" class="post-image">
+                        <div class="post-actions">
+                            <button><i class="fas fa-heart"></i> J’aime</button>
+                            <button><i class="fas fa-comment"></i> Commenter</button>
+                            <button><i class="fas fa-share"></i> Partager</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Ajoutez plus de publications ici -->
                 </div>
                 <div class="posts">
                     <div class="post">
                         <div class="post-header">
-                            <img src="images/profile-pic.jpg" alt="User" class="post-profile-pic">
+                            <img src="./assets/gam.jpeg" alt="User" class="post-profile-pic">
                             <div class="post-info">
                                 <h3>Nom de l’Étudiant</h3>
                                 <p>Il y a 2 heures</p>
                             </div>
                         </div>
                         <p>Contenu de la publication... Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <img src="images/post-image.jpg" alt="Post Image" class="post-image">
+                        <img src="./assets/dar.jpeg" alt="Post Image" class="post-image">
                         <div class="post-actions">
-                            <button><i class="fas fa-thumbs-up"></i> J’aime</button>
+                            <button><i class="fas fa-heart"></i> J’aime</button>
                             <button><i class="fas fa-comment"></i> Commenter</button>
                             <button><i class="fas fa-share"></i> Partager</button>
                         </div>
                     </div>
+                    
                     <!-- Ajoutez plus de publications ici -->
                 </div>
             </section>
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 CampusConnect. Tous droits réservés.</p>
-            <a href="#">Politique de confidentialité</a>
-            <a href="#">Conditions d’utilisation</a>
-        </div>
-    </footer>
+
 
     <!-- Font Awesome pour les icônes -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
