@@ -1,0 +1,142 @@
+<body class="container">
+    <div class="center">
+      <h1>Connexion 📖</h1>
+      <form>
+        <div class="inputbox">
+          <input type="text" required="required">
+          <span>Email</span>
+        </div>
+        <div class="inputbox">
+          <input type="password" required="required">
+          <span>Mot de passe</span>
+        </div>
+        
+        
+        <div class="inputbox">
+          <input type="submit" value="Se connecter">
+        </div>
+        <p class="p">Don't have an account <span><a href="register.html"> register</a></span></p>
+        <div class="social">
+        <p>or login via </p>
+        <img src="assets/gmail.jpg" alt="" style="width: 35px;height:35px; border-radius:50%;"></div>
+      </form>
+    </div>
+  </body>
+  
+  <style>
+    .p{
+        margin-top: -20px;
+      }
+    .social{
+        margin-left: 250px;
+        margin-top: -15px;
+    }
+    img{
+        margin-left: 40px;
+    }
+    a{
+        text-decoration: none;
+    }
+      /* Image de fond */
+      body{
+        
+          background-image: url('./assets/b6.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+  
+      /* Importation de la police */
+      @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+  
+      /* Global */
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Sansita Swashed", cursive;
+      }
+  
+      .center {
+        position: relative;
+        padding: 50px 50px;
+        background: linear-gradient(45deg, #cd325b, #1E90FF); /* Vert lime à bleu */
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+      }
+  
+      .center h1 {
+        font-size: 2.5em;
+        border-left: 5px solid #ff1e7c;
+        padding: 10px;
+        color: #000;
+        letter-spacing: 3px;
+        margin-bottom: 50px;
+        font-weight: bold;
+        padding-left: 15px;
+      }
+  
+      .center .inputbox {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 40px;
+      }
+  
+      .center .inputbox input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border: 2px solid #000;
+        outline: none;
+        background: none;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1.2em;
+        transition: 0.3s ease;
+      }
+  
+      .center .inputbox input:focus {
+        border-color: #ff1e87;
+      }
+  
+      .center .inputbox span {
+        position: absolute;
+        top: 14px;
+        left: 20px;
+        font-size: 1em;
+        transition: 0.6s;
+        font-family: sans-serif;
+        color: #555;
+      }
+  
+      .center .inputbox input:focus ~ span,
+      .center .inputbox input:valid ~ span {
+        transform: translateY(-30px);
+        font-size: 0.9em;
+        color: #ff1e4f;
+      }
+  
+      .center .inputbox input[type="submit"] {
+        width: 100%;
+        background: #ff1e83;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 1.2em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+  
+      .center .inputbox input[type="submit"]:hover {
+        background: #cd3266;
+      }
+  
+  </style>
+  

@@ -1,94 +1,133 @@
 <body class="container">
-<div class="login-box">
-  <h2>Login</h2>
-  <form>
-    <div class="user-box">
-      <input type="text" name="" required="">
-      <label>Username</label>
-    </div>
-    <div class="user-box">
-      <input type="password" name="" required="">
-      <label>Password</label>
-    </div>
-  </form>
-</div></body>
+  <div class="center">
+    <h1>Registration📖</h1>
+    <form>
+      <div class="inputbox">
+        <input type="text" required="required">
+        <span>Email</span>
+      </div>
+      <div class="inputbox">
+        <input type="text" required="required">
+        <span>Name</span>
+      </div>
+      <div class="inputbox">
+        <input type="tel" required="required">
+        <span>Phone</span>
+      </div>
+      <div class="inputbox">
+        <input type="password" required="required">
+        <span>Mot de passe</span>
+      </div>
+      <div class="inputbox">
+        <input type="submit" value="Se connecter">
+      </div>
+      <p class="p">Already have an account <span><a href="login.html"> login</a></span></p>
+    </form>
+  </div>
+</body>
+
 <style>
-    body{
-        background-image:url('./assets/b6.jpg');
+  .p{
+    margin-top: -20px;
+  }
+    /* Image de fond */
+    body {
+        background-image: url('./assets/b6.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-
     }
-    html {
-  height: 100%;
-}
 
-.login-box {
+    /* Importation de la police */
+    @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  padding: 40px;
-  transform: translate(-50%, -50%);
-  background: rgba(0,0,0,.5);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
-  border-radius: 10px;
-}
+    /* Global */
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: "Sansita Swashed", cursive;
+    }
 
-.login-box h2 {
-  margin: 0 0 30px;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-}
+    .center {
+      position: relative;
+      padding: 50px 50px;
+      background: linear-gradient(45deg, #cd325b, #1E90FF); /* Vert lime à bleu */
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+    }
 
-.login-box .user-box {
-  position: relative;
-}
+    .center h1 {
+      font-size: 2.5em;
+      border-left: 5px solid #ff1e7c;
+      padding: 10px;
+      color: #000;
+      letter-spacing: 3px;
+      margin-bottom: 50px;
+      font-weight: bold;
+      padding-left: 15px;
+    }
 
-.login-box .user-box input {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
-}
-.login-box .user-box label {
-  position: absolute;
-  top:0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  pointer-events: none;
-  transition: .5s;
-}
+    .center .inputbox {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 40px;
+    }
 
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: #03e9f4;
-  font-size: 12px;
-}
+    .center .inputbox input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border: 2px solid #000;
+      outline: none;
+      background: none;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      transition: 0.3s ease;
+    }
 
-.login-box form a {
-  position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  color: #03e9f4;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  transition: .5s;
-  margin-top: 40px;
-  letter-spacing: 4px
-}
+    .center .inputbox input:focus {
+      border-color: #ff1e87;
+    }
+
+    .center .inputbox span {
+      position: absolute;
+      top: 14px;
+      left: 20px;
+      font-size: 1em;
+      transition: 0.6s;
+      font-family: sans-serif;
+      color: #555;
+    }
+
+    .center .inputbox input:focus ~ span,
+    .center .inputbox input:valid ~ span {
+      transform: translateY(-30px);
+      font-size: 0.9em;
+      color: #ff1e4f;
+    }
+
+    .center .inputbox input[type="submit"] {
+      width: 100%;
+      background: #ff1e83;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 1.2em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .center .inputbox input[type="submit"]:hover {
+      background: #cd3266;
+    }
+
 </style>
